@@ -1,0 +1,170 @@
+body {
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #007bff !important;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card-title, .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-author {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+}
+
+.card-author i {
+    margin-right: 5px;
+}
+
+.card-price {
+    color: #28a745;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-price i {
+    margin-right: 5px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-info {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Additional styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.grid-form .form-group {
+    margin-bottom: 0;
+}
+
+.text-center .btn {
+    margin-top: 1rem;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-author, .card-price {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+@media (max-width: 576px) {
+    .grid-form {
+        grid-template-columns: 1fr;
+    }
+}

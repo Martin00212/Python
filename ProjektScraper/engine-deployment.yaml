@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webscraper-engine
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webscraper-engine
+  template:
+    metadata:
+      labels:
+        app: webscraper-engine
+    spec:
+      containers:
+      - name: engine
+        image: martsinpy/web_scraper-engine:latest
+        env:
+        - name: MONGO_URI
+          value: mongodb+srv://Python1:VI9Mb3hDJoDn4nb4@python.0c7bytz.mongodb.net/python_db
